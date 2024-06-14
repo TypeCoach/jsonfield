@@ -1,6 +1,7 @@
 import copy
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+# TypeCoach change for Django 4.2  ugettext_lazy => gettext_lazy
+from django.utils.translation import gettext_lazy as _
 try:
     from django.utils import six
 except ImportError:
